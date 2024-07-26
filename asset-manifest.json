@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Onelife-Healthcare/static/css/main.66deb818.css",
+    "main.js": "/Onelife-Healthcare/static/js/main.ebe4868a.js",
+    "static/js/453.a465b5a4.chunk.js": "/Onelife-Healthcare/static/js/453.a465b5a4.chunk.js",
+    "index.html": "/Onelife-Healthcare/index.html",
+    "main.66deb818.css.map": "/Onelife-Healthcare/static/css/main.66deb818.css.map",
+    "main.ebe4868a.js.map": "/Onelife-Healthcare/static/js/main.ebe4868a.js.map",
+    "453.a465b5a4.chunk.js.map": "/Onelife-Healthcare/static/js/453.a465b5a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66deb818.css",
+    "static/js/main.ebe4868a.js"
+  ]
+}
