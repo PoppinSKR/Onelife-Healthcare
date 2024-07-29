@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
-// import logo from './logo.png'
-
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,18 +34,30 @@ const Header = () => {
       <span className="logo-text">One Life Health Care</span>
     </div>
           </div>
-          <div className="nav-toggle" onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <ul className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">AboutUs</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">ContactUs</a></li>
+          <button className={`nav-toggle ${isNavOpen ? 'active' : ''}`} onClick={toggleNav}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
+          <ul className={`nav-links ${isNavOpen ? 'show' : ''}`}>
+          <li>
+              <a href="#home" onClick={toggleNav}>Home</a>
+            </li>
+            <li>
+              <a href="#features" onClick={toggleNav}>Features</a>
+            </li>
+            <li>
+              <a href="#about-us" onClick={toggleNav}>About Us</a>
+            </li>
+            <li>
+              <a href="#services" onClick={toggleNav}>Services</a>
+            </li>
+            <li>
+              <a href="#testimonials" onClick={toggleNav}>Testimonials</a>
+            </li>
+            <li>
+              <a href="#contactUs" onClick={toggleNav}>ContactUs</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -51,3 +66,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

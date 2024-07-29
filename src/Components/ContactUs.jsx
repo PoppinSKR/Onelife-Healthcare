@@ -1,17 +1,15 @@
-import React from 'react'
+// ContactUs.js
+import React from 'react';
 
-const ContactUs = () => {
-  return (
-    <section id="contact-us" className="contact-us">
-    <h2>Contact Us</h2>
-    <form className="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-  )
-}
+const ContactUs = () => (
+  <div className="contact-us">
+    <h3>Contact Us</h3>
+    <p>Have questions? Get in touch!</p>
+    <input type="text" placeholder="Your Name" />
+    <input type="email" placeholder="Your Email" />
+    <textarea placeholder="Your Message"></textarea>
+    <button type="button">Send Message</button>
+  </div>
+);
 
-export default ContactUs
+export default ContactUs;

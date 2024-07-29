@@ -1,7 +1,5 @@
 import { width } from '@fortawesome/free-brands-svg-icons/fa42Group';
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Hero() {
@@ -15,23 +13,12 @@ function Hero() {
         <button className="hero-button">Learn More</button>
       </div>
       <div className="hero-image">
-      <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 carousel-image"
-          src="https://res.cloudinary.com/skyrev/image/upload/v1613843545/skyrev/medical/banner1_3D_2x_y2cary.png"
-          alt="Banner 1"
-        />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 carousel-image"
-          src="https://res.cloudinary.com/skyrev/image/upload/v1613843548/skyrev/medical/faq_3D_2x_uu2adj.png"
-          alt="Banner 2"
-        />
-      </Carousel.Item>
-    </Carousel>
-      </div>
+            <img
+              className="d-block w-100 carousel-image"
+              src="https://res.cloudinary.com/skyrev/image/upload/v1613843545/skyrev/medical/banner1_3D_2x_y2cary.png"
+              alt="Banner 1"
+            />
+          </div>
     </section>
   );
 }
