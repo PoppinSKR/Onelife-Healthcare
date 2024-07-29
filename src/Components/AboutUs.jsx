@@ -1,5 +1,4 @@
-// AboutUs.js
-import React from 'react';
+import React from 'react'
 
 
 const AboutUs = () => {
@@ -25,4 +24,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUs
